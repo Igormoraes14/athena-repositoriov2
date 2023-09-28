@@ -212,6 +212,12 @@ header hr {
     border-style: solid;
 }
 
+#profile-user {
+    width: 40px;
+    height: 40px;
+    margin-left: 5vw;
+}
+
 #market-cart-icon-header {
     width: 30px;
     height: 30px;
