@@ -2,7 +2,7 @@
 
 body {
     width: 480px;
-    background-color: #630a96;
+    background-color: #7A29FF;
     margin: 0%;
     padding: 0%;
 }
@@ -122,10 +122,10 @@ main div input {
     width: 130px;
     height: 36px;
     border-radius: 8px;
-    border-color: #630a96;
+    border-color: #7A29FF;
     border: 2px;
     border-style: solid;
-    color: #630a96;
+    color: #7A29FF;
     margin-top: 20px;
     background-color: #FFFFFF;
     font-weight: 700;
@@ -138,7 +138,7 @@ main div input {
     height: 36px;
     border-radius: 8px;
     border: 0px;
-    background-color: #630a96;
+    background-color: #7A29FF;
     color: #FFFFFF;
     font-weight: 700;
     font-size: medium;
