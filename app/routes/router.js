@@ -84,16 +84,16 @@ router.post("/produto", function(req, res){
 router.post( 
     "/cadastro",
     body("d-cadastro"),
-    body("t-nome")
+    body("tnome")
         .isInt({min: 2, max: 40})
         .withMessage("O nome deve ter no minimo 2 caracteres"),
-    body("t-email")
+    body("temail")
         .isEmail({min: 5, max: 50})
         .withMessage("O email deve ser válido"), 
-    body("t-senha")
+    body("tsenha")
         .isStrongPassword()
         .withMessage("A senha deve ser válida"),
-    body("t-confsenha")
+    body("tconfsenha")
         .isStrongPassword()
         .withMessage("A senha deve ser a mesma que a anterior"),
 
