@@ -31,11 +31,13 @@ CREATE TABLE `usuarios` (
   `senha_usu` varchar(50) NOT NULL,
   `confirmar_usu` varchar(50) NOT NULL,
   `tel_usu` varchar(14) DEFAULT NULL,
+  `cep_usu` varchar(9) NOT NULL,
+  `ende_usu` varchar(100) NOT NULL,
   `created_at_usu` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
-INSERT INTO `usuarios` (`id_usu`, `nome_usu`, `user_usu`, `senha_usu`, `confirmar_usu`, `tel_usu`, `created_at_usu`) VALUES
-(1, 'Breno Tavares', 'BeTava@gmail.com', '987654', 'Breno Tavares', '11996307616', '2023-06-28 21:10:31');
+INSERT INTO `usuarios` (`id_usu`, `nome_usu`, `user_usu`, `senha_usu`, `confirmar_usu`, `tel_usu`,`cep_usu`,`ende_usu`, `created_at_usu`) VALUES
+(1, 'Breno Tavares', 'BeTava@gmail.com', '987654', 'Breno Tavares', '11996307616','06423-090','Rua do Ouvidor, 480', '2023-06-28 21:10:31');
 
 ALTER TABLE `anunciantes` ADD PRIMARY KEY (`id_anun`);
 
