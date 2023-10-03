@@ -65,6 +65,17 @@ router.get("/adm", function(req, res){
     res.render("pages/adm", {retorno: null, erros: null})}
 );
 
+router.get("/carrinho", function(req,res){
+    res.render("pages/carrinho", {retorno: null, erros: null})
+});
+
+router.get("/historico", function(req, res){
+    res.render("pages/historico", {retorno: null, erros: null})
+});
+
+router.get("/dados", function(req, res){
+    res.render("pages/dados", {reotrno: null, erros: null})
+});
 
 router.post("/produto", function(req, res){
     res.json(req.body)
@@ -74,8 +85,8 @@ router.post(
     "/cadastro",
     body("d-cadastro"),
     body("t-nome")
-        .isInt({min: 3, max: 40})
-        .withMessage("O nome deve ter no minimo 3 caracteres"),
+        .isInt({min: 2, max: 40})
+        .withMessage("O nome deve ter no minimo 2 caracteres"),
     body("t-email")
         .isEmail({min: 5, max: 50})
         .withMessage("O email deve ser válido"), 
@@ -88,14 +99,14 @@ router.post(
 
     async function (req, res){
         var dadosForm = {
-            user_usuario: req.body.nomeusu,
-            email_usuario: req.body.emailusu,
-            senha_usuario: bcrypt.hashSync (req.body.senhausu, salt),
-            confirmar_usuario: req.body.confSenhausu,
+            user_usuario: req.body.tnome,
+            email_usuario: req.body.temail,
+            senha_usuario: bcrypt.hashSync (req.body.tsenha, salt),
+            confirmar_usuario: req.body.tconfSenha,
         };
         const erros = validationResult(req);
         if(!erros.isEmpty()) {
-            return res.render("pages/cadastro", {retorno: null, listaErros: errors, valores: req.body})
+            return res.render("pages/cadastro", {retorno: null, listaErros: erros, valores: req.body})
         }
         try {
             let create = await usuarioDAL.create(dadosForm);
