@@ -107,7 +107,7 @@ body {
     background-color: white;
     border: 2px;
     border-style: solid;
-    border-color: #630a96;
+    border-color: #7A29FF;
     border-radius: 10px;
     width: 400px;
     margin-top: 15px;
@@ -138,7 +138,7 @@ button:focus {
 #buy-now-button {
     width: 400px;
     height: 40px;
-    background-color: #630a96;
+    background-color: #7A29FF;
     border-radius: 10px;
     color: white;
     border: 0px;
@@ -192,7 +192,7 @@ header hr {
     font-family: 'Outfit', sans-serif;
     background-color: white;
     border-radius: 10px 10px 0px 0px;
-    border: #630a96 solid 2.5px; 
+    border: #7A29FF solid 2.5px; 
     border-bottom: none;
     display: flex;
     flex-direction: row;
@@ -223,7 +223,7 @@ header hr {
     height: 30px;
     border-radius: 0px 0px 10px 10px;
     border: none;
-    background-color: #630a96;
+    background-color: #7A29FF;
     color: white;
     font-family: 'Outfit', sans-serif;
     font-weight: 800;
