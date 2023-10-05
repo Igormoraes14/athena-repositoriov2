@@ -31,6 +31,7 @@
           #search-bar-header {
               width: 50%;
               height: 30px;
+              max-width: 200px;
               border-radius: 8px;
               border: 0px;
               border-style: solid;
@@ -51,6 +52,24 @@
               height: 40px;
           }
           
+          #v-menu ul{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            background-color: #ffff;
+            padding: 1rem;
+    
+            
+          }
+    
+          #v-menu ul li a {
+            text-decoration: none;
+            font-family: 'Outfit', sans-serif;
+            color: #000;
+            font-weight: 600;
+            font-size: 14px;
+          }
+
           }
 
 @media (min-width: 390px) and (max-width: 480px){
@@ -161,6 +180,7 @@ header {
     border-radius: 8px;
     border: 0px;
     border-style: solid;
+    
 }
 
 #profile-user {
@@ -182,5 +202,22 @@ header {
     margin-left: 10%;
     margin-top: 5px;
 }
+
+#v-menu ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #ffff;
+    padding: 1rem;
+
+    
+  }
+
+  #v-menu ul li a {
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    color: #000;
+    font-weight: 600;
+  }
 
 }
