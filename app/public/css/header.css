@@ -55,6 +55,11 @@
 
 @media (min-width: 390px) and (max-width: 480px){
 
+    * {
+        font-family: 'Outfit', sans-serif;
+
+    }
+
 header {
     background-color: #7A29FF;
     margin: 0;
@@ -100,6 +105,25 @@ header {
       .logo-athena {
           height: 40px;
       }
+
+      #v-menu ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        background-color: #ffff;
+        padding: 1rem;
+
+        
+      }
+
+      #v-menu ul li a {
+        text-decoration: none;
+        font-family: 'Outfit', sans-serif;
+        color: #000;
+        font-weight: 600;
+      }
+
+      
       
       }
 

@@ -107,10 +107,10 @@ router.post(
 
     async function (req, res){
         var dadosForm = {
-            user_usuario: req.body.tnome,
-            email_usuario: req.body.temail,
-            senha_usuario: bcrypt.hashSync (req.body.tsenha, salt),
-            confirmar_usuario: req.body.tconfSenha,
+            user_usu: req.body.tnome,
+            email_usu: req.body.temail,
+            senha_usu: bcrypt.hashSync (req.body.tsenha, salt),
+            confirmar_usu: req.body.tconfSenha,
         };
         const erros = validationResult(req);
         if(!erros.isEmpty()) {
