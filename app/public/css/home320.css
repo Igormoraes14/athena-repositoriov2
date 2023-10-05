@@ -76,6 +76,11 @@ body main h3 {
    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.product-box:hover {
+    transform: scale(108%);
+
+}
+
 .price {
     font-weight: 500;
 }
@@ -93,7 +98,7 @@ body main h3 {
 }
 
 .add-cart:hover {
-    background-color: #47139c;
+    background-color: #24005a;
 }
 
 }

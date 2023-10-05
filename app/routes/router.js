@@ -81,6 +81,14 @@ router.post("/produto", function(req, res){
     res.json(req.body)
 });
 
+router.get("/pagaconcluido", function(req, res){
+    res.render("pages/pagaconcluido", {reotrno: null, erros: null})
+});
+
+router.get("/pagacancelado", function(req, res){
+    res.render("pages/pagacancelado", {reotrno: null, erros: null})
+});
+
 router.post( 
     "/cadastro",
     body("d-cadastro"),
