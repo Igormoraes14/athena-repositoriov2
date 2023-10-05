@@ -43,7 +43,7 @@ main {
     flex-direction: row;
     justify-content: center;
     width: 90%;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .sec-venda-area div {
@@ -53,6 +53,7 @@ main {
     margin-right: 5px;
     font-family: 'Outfit', sans-serif;
     color: white;
+    padding: 10px;
 }
 
 .sec-venda-area button {
@@ -61,6 +62,66 @@ main {
     height: 100px;
     border-radius: 10px;
     border: 0 solid;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-venda-area i {
+    font-size: xx-large;
+}
+
+.sec-venda-area button span {
+    font-size: medium;
+}
+
+.sec-venda-area p {
+    font-weight: lighter;
+}
+
+.sec-venda-area h4 {
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+/* Botões main inferior 
+    Codigo da cor dourado #f3c640
+*/
+
+.sec-buttons-area {
+    width: 90%;
+    margin-top: 20px;
+}
+
+.buttons-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-area button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid;
+    height: 70px;
+    color: #7A29FF;
+    font-size: xx-large;
+    background-color: white;
+}
+
+.buttons-area p {
+    font-size: medium;
+}
+
+.buttons-area button:nth-child(1){
+    border-radius: 10px 10px 0 0;
+}
+
+.buttons-area button:nth-child(7){
+    border-radius: 0px 0px 10px 10px;
 }
 
 }
