@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
 
-@media (min-width: 390px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 390px) {
 
 body{
     background-color: #e0e0e0;
@@ -12,13 +12,14 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 .username-area {
     background-color: white;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     font-family: 'Outfit', sans-serif;
     width: 90%;
@@ -33,9 +34,9 @@ main {
     margin-left: 10px;
 }
 
-.username-area span {
+.username-area span{
+    margin-right: 50px;
     font-size: large;
-    margin-right: 120px;
 }
 
 .sec-venda-area {
@@ -71,20 +72,22 @@ main {
 }
 
 .sec-venda-area i {
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .sec-venda-area button span {
-    font-size: medium;
+    font-size: 15px;
 }
 
 .sec-venda-area p {
-    font-size: smaller;
+    font-weight: lighter;
+    font-size: 14px;
 }
 
 .sec-venda-area h4 {
-    margin-top: 10px;
-
+    margin-top: 15px;
+    font-weight: 100;
+    font-size: small;
 }
 
 /* Botões main inferior 
@@ -128,6 +131,12 @@ main {
 
 .buttons-area button:nth-child(7){
     border-radius: 0px 0px 10px 10px;
+}
+
+/*Abaixo animação ao clicar nos botões*/
+
+.buttons-area button:hover {
+    transform: scale(10px);
 }
 
 }
