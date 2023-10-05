@@ -30,31 +30,37 @@ main {
 
 #profile-photo{
     width: 60px;
+    margin-left: 10px;
 }
 
 #username {
     font-size: large;
-
+    margin-right: 120px;
 }
 
-
-
-.parceiro-area {
+.sec-venda-area {
     display: flex;
     flex-direction: row;
-    background-color: cadetblue;
-    border-radius: 10px;
-    margin-right: 5px;
-    width: 60%;
+    justify-content: center;
+    width: 90%;
+    margin-top: 10px;
 }
 
-#venda {
+.sec-venda-area div {
     background-color: #7A29FF;
-    width: 20%;
+    border-radius: 10px;
+    width: 100%;
+    margin-right: 5px;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+}
+
+.sec-venda-area button {
+    background-color: #7A29FF;
+    width: 25%;
     height: 100px;
     border-radius: 10px;
     border: 0 solid;
-    margin: 10px;
 }
 
 }
